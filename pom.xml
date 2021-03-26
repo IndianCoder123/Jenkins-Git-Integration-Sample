@@ -46,7 +46,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>Jenkins-Git-Integration</finalName>
+		<finalName>jenkins-git-integration</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
