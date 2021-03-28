@@ -22,7 +22,7 @@ pipeline {
 			stage ('Deployment State') {
 				steps {			
 					withMaven(maven : 'LOCALMAVEN') {
-						bat 'mvn deploy'
+						bat 'mvn clean'
 					}	
 				}
 			}				

@@ -53,13 +53,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-			    <groupId>org.apache.maven.plugins</groupId>
-			    <artifactId>maven-deploy-plugin</artifactId>
-			    <configuration>
-			    	<deployAtEnd>true</deployAtEnd>
-			    </configuration>
-			</plugin>
 		</plugins>
 	</build>
 
