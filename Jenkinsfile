@@ -5,7 +5,7 @@ pipeline {
 			
 			stage ('Compile State') {
 				steps {			
-					withMaven(maven : 'apache-maven-3.6.3') {
+					withMaven(maven : 'LOCALMAVEN') {
 						sh 'mvn clean install'
 					}	
 				}
@@ -13,7 +13,7 @@ pipeline {
 			
 			stage ('Testing State') {
 				steps {			
-					withMaven(maven : 'apache-maven-3.6.3') {
+					withMaven(maven : 'LOCALMAVEN') {
 						sh 'mvn test'
 					}	
 				}
@@ -21,7 +21,7 @@ pipeline {
 			
 			stage ('Deployment State') {
 				steps {			
-					withMaven(maven : 'apache-maven-3.6.3') {
+					withMaven(maven : 'LOCALMAVEN') {
 						sh 'mvn deply'
 					}	
 				}
