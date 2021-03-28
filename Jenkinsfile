@@ -6,7 +6,7 @@ pipeline {
 			stage ('Compile State') {
 				steps {			
 					withMaven(maven : 'LOCALMAVEN') {
-						sh 'mvn clean install'
+						bat 'mvn clean install'
 					}	
 				}
 			}	
@@ -14,7 +14,7 @@ pipeline {
 			stage ('Testing State') {
 				steps {			
 					withMaven(maven : 'LOCALMAVEN') {
-						sh 'mvn test'
+						bat 'mvn test'
 					}	
 				}
 			}	
@@ -22,7 +22,7 @@ pipeline {
 			stage ('Deployment State') {
 				steps {			
 					withMaven(maven : 'LOCALMAVEN') {
-						sh 'mvn deply'
+						bat 'mvn deply'
 					}	
 				}
 			}				
